@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<Xdmf xmlns:xi="http://www.w3.org/2001/XInclude" Version="2.0">
+<Domain>
+<Grid Name="swarm" GridType="Uniform">
+
+        <Time Value="1.0" />
+
+        <Topology Type="POLYVERTEX" NodesPerElement="6401"> </Topology>
+                <Geometry Type="XYZ">
+                        <DataItem Format="HDF" NumberType="Float" Precision="8" Dimensions="6401 3">y130+x660.h5:/data</DataItem>
+                </Geometry>
+        <Attribute Type="Scalar" Center="Node" Name="materialVariable">
+                        <DataItem Format="HDF" NumberType="Float" Precision="8" Dimensions="6401 1">y130+x660_dissipationField.h5:/data</DataItem>
+        </Attribute>
+</Grid>
+</Domain>
+</Xdmf>
